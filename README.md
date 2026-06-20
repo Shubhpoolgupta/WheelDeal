@@ -8,6 +8,17 @@ The project demonstrates Object-Oriented Design principles, SOLID principles, an
 
 ---
 
+# Functional Requirements
+
+The WheelDeal Vehicle Rental System is designed to satisfy the following requirements:
+
+✅ The system should manage multiple vehicles across different rental locations.
+✅ Users should be able to search, filter, and reserve vehicles based on their preferences.
+✅ The system should track vehicle availability and prevent booking conflicts.
+✅ Billing and payment processing should be integrated for a complete rental cycle.
+✅ The system should be scalable to handle operations across multiple cities.
+
+
 ## Features
 
 * Multiple rental stores
