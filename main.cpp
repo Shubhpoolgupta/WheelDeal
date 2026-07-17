@@ -185,7 +185,7 @@ public:
         this->name = name;
     }
 
-    vector<shared_ptr<Vehicle>> getAvailableVehicles(time_t startDate, time_t endDate) {
+    vector<shared_ptr<Vehicle>> getAvailableVehicles() {
         vector<shared_ptr<Vehicle>> availableVehicles;
         for (auto& entry : vehicles) {
             if (entry.second->getStatus() == VehicleStatus::AVAILABLE) {
@@ -203,7 +203,7 @@ public:
         vehicles.erase(registrationNumber);
     }
 
-    bool isVehicleAvailable(string registrationNumber, time_t startDate, time_t endDate) {
+    bool isVehicleAvailable(string registrationNumber) {
         auto it = vehicles.find(registrationNumber);
         if (it == vehicles.end()) return false;
         return it->second->getStatus() == VehicleStatus::AVAILABLE;
